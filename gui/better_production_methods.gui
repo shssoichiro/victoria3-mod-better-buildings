@@ -11,50 +11,6 @@
 
 types production_methods
 {
-	type production_methods_entries_container = flowcontainer {
-		direction = vertical
-		parentanchor = hcenter
-		using = default_content_fade
-		spacing = 10
-
-		flowcontainer = {
-			block "production_entries" {
-			}
-			direction = vertical
-			parentanchor = hcenter
-			spacing = 10
-
-			item = {
-				buildings_production_method_item = {}
-			}
-		}
-
-		block "potential_entries_header" {
-			default_header = {
-				parentanchor = hcenter
-			}
-		}
-
-		block "potential_entries_entire_widget" {
-			flowcontainer = {
-				margin = { 7 -5 }
-				
-				dynamicgridbox = {
-					block "potential_entries" {
-					}
-					flipdirection = yes
-					datamodel_wrap = 5
-
-					item = {
-						container = {
-							producing_building_button = {}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	type production_methods_panel = default_block_window {
 		name = "production_methods_panel"
 		
